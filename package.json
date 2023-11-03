@@ -13,9 +13,12 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-type-animation": "^3.1.0"
+    "react-type-animation": "^3.1.0",
+    "resend": "^1.1.0"
   },
   "devDependencies": {
+    "@types/node": "20.8.9",
+    "@types/react": "18.2.33",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Navlink from './Navlink'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import MenuOverly from './MenuOverly';
+import { motion } from "framer-motion";
 
 const NavLinks = [
     {
@@ -45,9 +46,13 @@ const Navbar = () => {
                     <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8">
                         {
                             NavLinks.map((link, index) => (
-                                <li key={index}>
+                                <motion.li
+                                    key={index}
+                                    whileHover={{ scale: 1.3 }}
+                                    whileTap={{ scale: 0.85 }}
+                                >
                                     <Navlink href={link.path} title={link.title} />
-                                </li>
+                                </motion.li>
                             ))
                         }
                     </ul>

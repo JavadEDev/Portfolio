@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^2.0.18",
+    "@react-three/drei": "^9.88.11",
+    "@react-three/fiber": "^8.15.10",
+    "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
+    "react-animated-numbers": "^0.16.0",
     "react-dom": "latest",
     "react-type-animation": "^3.1.0",
-    "resend": "^1.1.0"
+    "resend": "^1.1.0",
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@types/node": "20.8.9",

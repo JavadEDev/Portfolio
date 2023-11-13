@@ -18,6 +18,7 @@
     "react": "latest",
     "react-animated-numbers": "^0.16.0",
     "react-dom": "latest",
+    "react-simple-maps": "^3.0.0",
     "react-type-animation": "^3.1.0",
     "resend": "^1.1.0",
     "three": "^0.158.0"

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import GithubIcon from '../../../public/github-64.svg'
 import LinkedinIcon from '../../../public/linkedin-64.svg'
+import Map from '../Components/Map'
 
 
 const EmailSection = () => {
@@ -40,11 +41,11 @@ const EmailSection = () => {
 
 
     return (
-        <section id='contact' className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
-            <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z=0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'>
-
-            </div>
-            <div className='z-10'>
+        <section id='contact' className='grid md:grid-cols-2 px-8 my-12 md:my-12 py-24 gap-4 relative'>
+            <article className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-500 to-transparent h-full w-full z-0 absolute '>
+                <Map />
+            </article>
+            <article className='z-10'>
                 <h5 className='text-xl font-bold text-white my-2'>
                     Let`&apos;s Connect
                 </h5>
@@ -67,10 +68,9 @@ const EmailSection = () => {
                             alt='linkedin Icon'
                         />
                     </Link>
-
                 </div>
-            </div>
-            <div>
+            </article>
+            <article className='z-10'>
                 <form ref={ref} className='flex flex-col' onSubmit={handleSubmit} >
                     <div className='mb-6'>
                         <label htmlFor="email" itemType='email' className='text-white block mb-2 text-sm font-medium '>
@@ -124,9 +124,8 @@ const EmailSection = () => {
                             </p>
                         )
                     }
-
                 </form>
-            </div>
+            </article>
         </section>
     )
 }

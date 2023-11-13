@@ -5,39 +5,13 @@ import TabButton from './TabButton'
 import { motion } from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 
-
-const atstart = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-        opacity: 1,
-        scale: 1,
-        transition: {
-            delayChildren: 1,
-            staggerChildren: 1
-        }
-    }
-};
-
-const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-        y: 0,
-        opacity: 1
-    }
-};
-
 const TAB_DATA = [
     {
         title: "Skills",
         id: "skills",
         content: (
-            <motion.ul
+            <ul
                 className='list-disc pl-2'
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                    ease: "easeOut", duration: 1.3,
-                }}
             >
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -51,41 +25,31 @@ const TAB_DATA = [
                 <li>MaterialUI</li>
                 <li>BootStrap5</li>
                 <li>GitHub</li>
-            </motion.ul>
+            </ul>
         )
     },
     {
         title: "Edcation",
         id: 'education',
         content: (
-            <motion.ul
+            <ul
                 className='list-disc pl-2'
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                    ease: "easeOut", duration: 1,
-                }}
             >
                 <li>Front End Development Advanced</li>
                 <li>Bachelor of Software Engineering</li>
-            </motion.ul>
+            </ul>
         )
     },
     {
         title: "Certifications",
         id: "certifications",
         content: (
-            <motion.ul
+            <ul
                 className='list-disc pl-2'
-                initial={{ opacity: 0, scale: 0.3 }}
-                animate={{ opacity: 1, scale: 1.1 }}
-                transition={{
-                    ease: "easeIn", duration: 0.5,
-                }}
             >
                 <li>Frontend Development from Brainnest Co.</li>
                 <li>Fullstack Development Practitioner</li>
-            </motion.ul>
+            </ul>
         )
 
     },
@@ -93,32 +57,24 @@ const TAB_DATA = [
         title: "Experience",
         id: 'experience',
         content: (
-            <motion.ul
+            <ul
                 className='list-disc pl-2'
-                initial={{ opacity: 0, scale: 0.3 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                    ease: "easeIn", duration: 0.7,
-                }}
             >
                 <li>Frontend Freelancer</li>
                 <li>IT Support/Desktop Support Engineer at 7 Years</li>
-            </motion.ul>
+            </ul>
         )
     }
 ]
 
-
 const AboutSection = () => {
     const [tab, setTab] = useState("skills")
     const [isPending, startTransition] = useTransition()
-
     const handleTabChange = (id) => {
         startTransition(() => {
             setTab(id)
         })
     }
-
 
     return (
         <section id="about" className='text-white pt-5 scroll-snap-x-center scroll-snap-y-center'>
@@ -167,11 +123,15 @@ const AboutSection = () => {
                             Certifications
                         </TabButton>
                     </div>
-                    <div
+                    <motion.div
                         className="mt-6"
+                        whileHover={{ scale: 1.1, y: 10 }}
+                        transition={{
+                            ease: "easeIn", duration: 1,
+                        }}
                     >
                         {TAB_DATA.find((t) => t.id === tab).content}
-                    </div>
+                    </motion.div>
                 </article>
             </article>
         </section>

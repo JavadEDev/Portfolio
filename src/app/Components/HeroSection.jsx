@@ -2,6 +2,7 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
@@ -45,32 +46,27 @@ const HeroSection = () => {
                             repeat={Infinity}
                         />
                     </h1>
-                    <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-                        <TypeAnimation
-                            splitter={(str) => str.split(/(?= )/)} // 'Lorem ipsum dolor' -> ['Lorem', ' ipsum', ' dolor']
-                            sequence={[
-                                'As a highly motivated and enthusiastic front-end developer, I am eager to apply my knowledge of HTML5, CSS3, JavaScript (ES5/6), React.js, Tailwind CSS and Bootstrap5, and experience with Node.js, C#, SQL, and Mango DB. to bring dynamic and user-friendly web experiences to life. With less than a year of experience, I have honed my problem-solving skills and attention to detail to deliver high-quality code and meet project deadlines. I am constantly seeking new challenges and opportunities to further grow my skills and knowledge in the field.',
-                                3000,
-                                '',
-                            ]}
-                            speed={{ type: 'keyStrokeDelayInMs', value: 30 }}
-                            omitDeletionAnimation={true}
-                            repeat={Infinity}
-                        />
-                    </p>
-                    <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500  hover:bg-slate-200 text-white">Hire me</button>
-                        <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white  mt-3 ">
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
-                        </button>
-                    </div>
+                    <article>
+                        <Link
+                            href="/#contact"
+                            className="inline-block px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  hover:bg-slate-200 text-white"                        >
+                            Hire Me
+                        </Link>
+                        <Link
+                            href="/"
+                            className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white  mt-3 "                        >
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                                Download CV
+                            </span>
+                        </Link>
+                    </article>
                 </motion.article>
                 <motion.article
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ ease: "easeOut", duration: 1 }}
                     className="col-span-4 place-self-center mt-4 lg:mt-0">
-                    <div className="rounded-full w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] relative">
+                    <article className="rounded-full w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] relative">
                         <Canvas>
                             <OrbitControls enableZoom={false} />
                             <ambientLight intensity={1.5} />
@@ -91,7 +87,7 @@ const HeroSection = () => {
                             width={300}
                             height={300}
                         />}
-                    </div>
+                    </article>
                 </motion.article>
             </section>
         </main>

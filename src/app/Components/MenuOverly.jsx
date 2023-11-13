@@ -1,5 +1,5 @@
 import React from 'react'
-import Navlink from './Navlink'
+import NavLink from './NavLinks'
 import { motion } from "framer-motion";
 
 const MenuOverly = ({ Links }) => {
@@ -11,7 +11,7 @@ const MenuOverly = ({ Links }) => {
                     whileHover={{ scale: 1.3 }}
                     whileTap={{ scale: 0.85 }}
                 >
-                    <Navlink href={link.path} title={link.title} />
+                    <NavLink href={link.path} title={link.title} />
                 </motion.li>
             ))}
         </ul>

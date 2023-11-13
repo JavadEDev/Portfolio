@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Navlink from './Navlink'
+import Navlink from './NavLinks'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { motion } from "framer-motion";
 import MenuOverly from './MenuOverly';

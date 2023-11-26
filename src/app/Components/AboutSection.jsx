@@ -77,7 +77,7 @@ const AboutSection = () => {
     }
 
     return (
-        <section id="about" className='text-white pt-5 scroll-snap-x-center scroll-snap-y-center'>
+        <section id="about" className='text-content pt-5 scroll-snap-x-center scroll-snap-y-center'>
             <article className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16'>
                 <motion.div
                     animate={{
@@ -96,7 +96,7 @@ const AboutSection = () => {
                     <Image src="/images/about-section.jpg" alt='About Section' width={500} height={500} />
                 </motion.div>
                 <article className='mt-4 ld:mt-0 text-left flex flex-col h-full'>
-                    <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+                    <h2 className='text-4xl font-bold text-content mb-4'>About Me</h2>
                     <p className='text-base lg:text-lg'>
                         <TypeAnimation
                             splitter={(str) => str.split(/(?= )/)} // 'Lorem ipsum dolor' -> ['Lorem', ' ipsum', ' dolor']

@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-bkg: 18 18 18;
+  --color-content: 255 253 250;
+  --color-accent1: 173 183 190;
+  --color-accent2: 18 18 18;
+  --color-border1: 51 53 63;
+  --color-border2: 226 232 240;
+  --color-border3: 24 25 30;
+  --color-bge: 24 25 30;
+  --color-ph: 156 162 169;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-bkg: 217deg 32.6% 17.5%;
+    --color-content: 210deg 40% 98%;
+    --color-accent1: 288deg 95.8% 90.6%;
+    --color-accent2: 168deg 83.8% 78.2%;
+    --color-border1: 51 53 63;
+    --color-border2: 226 232 240;
+    --color-border3: 226 232 240;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+:root[class="light"] {
+  --color-bkg: 255 253 250;
+  --color-content: 18 18 18;
+  --color-accent1: 44 45 46;
+  --color-accent2: 89 88 92;
+  --color-border1: 51 53 63;
+  --color-border2: 51 65 85;
+  --color-border3: 226 232 240;
+  --color-bge: 226 227 233;
+  --color-ph: 62 63 65;
+
 }

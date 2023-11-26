@@ -46,23 +46,23 @@ const EmailSection = () => {
                 <Map />
             </article>
             <article className='z-10'>
-                <h5 className='text-xl font-bold text-white my-2'>
+                <h5 className='text-xl font-bold text-content my-2'>
                     Let`&apos;s Connect
                 </h5>
-                <p className='text-[#ADB7BE] mb-4 max-w-md'>
+                <p className='text-accent-1 mb-4 max-w-md'>
                     {" "}
                     I&apos;m currently looking for new opportunities, my inbox is always open.
                     Whether you have a question or just want to say hi, I&apos;ll try my best
                     to get back to you!
                 </p>
                 <div className='socials flex flex-row gap-2 '>
-                    <Link href="github.com">
+                    <Link href="https://github.com/Javad-EB">
                         <Image
                             src={GithubIcon}
                             alt='Github Icon'
                         />
                     </Link>
-                    <Link href="linkedin.com">
+                    <Link href="https://www.linkedin.com/in/javadesmatib/">
                         <Image
                             src={LinkedinIcon}
                             alt='linkedin Icon'
@@ -80,7 +80,7 @@ const EmailSection = () => {
                             type="email"
                             name="email"
                             id="email"
-                            className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 '
+                            className='bg-bge border border-[#33353F] placeholder-ph text-gray-100 text-sm rounded-lg block w-full p-2.5 '
                             required
                             placeholder='YourEmail@domain.com'
                         />
@@ -93,7 +93,7 @@ const EmailSection = () => {
                             type="text"
                             name="subject"
                             id="subject"
-                            className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 '
+                            className='bg-bge border border-[#33353F] placeholder-ph text-gray-100 text-sm rounded-lg block w-full p-2.5 '
                             required
                             placeholder='Just saying Hi'
                         />
@@ -105,14 +105,14 @@ const EmailSection = () => {
                         <textarea
                             name="message"
                             id="message"
-                            className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 '
+                            className='bg-bge border border-[#33353F] placeholder-ph text-gray-100 text-sm rounded-lg block w-full p-2.5 '
                             required
                             placeholder="Let's talk about ..."
                         />
                     </div>
                     <button
                         type="submit"
-                        className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full '
+                        className='bg-primary-500 hover:bg-primary-600 text-content font-medium py-2.5 px-5 rounded-lg w-full '
                     >
                         Send Message
                     </button>

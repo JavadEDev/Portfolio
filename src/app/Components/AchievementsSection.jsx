@@ -27,7 +27,7 @@ const achievementList = [
 const AchievementsSection = () => {
     return (
         <section className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-            <article className='border-[#33353F] border rounded-md py-8 px-16 flex flex-col sm:flex-row  item-center justify-between'>
+            <article className='border-border-1 border rounded-md py-8 px-16 flex flex-col sm:flex-row  item-center justify-between'>
                 {achievementList.map((achievement, index) => {
                     return (
                         <article
@@ -36,12 +36,12 @@ const AchievementsSection = () => {
                         >
                             <motion.h2
                                 whileHover={{ scale: 2 }}
-                                className='text-white text-4xl font-bold flex flex-row'>
+                                className='text-content text-4xl font-bold flex flex-row'>
                                 {achievement.prefix}
                                 {achievement.value}
                                 {achievement.postfix}
                             </motion.h2>
-                            <p className='text-[#ADB7BE] text-base'>
+                            <p className='text-accent-1 text-base'>
                                 {achievement.metric}
                             </p>
                         </article>

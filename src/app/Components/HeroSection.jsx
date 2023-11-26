@@ -8,13 +8,15 @@ import { motion } from "framer-motion"
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import { Material, Color } from 'three';
-
+import useDownloader from "react-use-downloader";
 
 const HeroSection = () => {
-    const color3 = new Color("rgb(117, 84, 235)))");
-    const color2 = new Color("rgb(169, 48, 173)0)");
+    const color3 = new Color("rgb(89, 88, 92)))");
+    const color2 = new Color("rgb(168, 85, 247)0)");
     const color5 = new Color('skyblue');
-
+    const { size, elapsed, percentage, download, cancel, error, isInProgress } = useDownloader();
+    const fileUrl = "../../../public/images/cv.pdf"
+    const filename = "cv.pdf";
     return (
         <main className='lg:py-4 scroll-snap-x-center scroll-snap-y-center'>
             <section className="grid grid-cols-1 sm:grid-cols-12">
@@ -24,7 +26,7 @@ const HeroSection = () => {
                     transition={{ ease: "easeOut", duration: 1 }}
                     className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                 >
-                    <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold '>
+                    <h1 className='text-content mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold '>
                         <span className=" text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
                             Hello, I'm {" "}
                         </span>
@@ -49,16 +51,19 @@ const HeroSection = () => {
                     <article>
                         <Link
                             href="/#contact"
-                            className="inline-block px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  hover:bg-slate-200 text-white"                        >
+                            className="inline-block px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  hover:bg-border-2 text-content"                        >
                             Hire Me
                         </Link>
-                        <Link
-                            href="../../../public/CV.pdf"
-                            className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white  mt-3 "                        >
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                        {/* <p>Download is in {isInProgress ?
+                            "in progress" : "stopped"}</p> */}
+                        <button
+                            className="inline-block px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500 hover:bg-border-3 text-content  mt-3 "
+                            onClick={() => download(fileUrl, filename)}
+                        >
+                            <span className="block bg-bkg hover:bg-border-3 rounded-full px-5 py-2">
                                 Download CV
                             </span>
-                        </Link>
+                        </button>
                     </article>
                 </motion.article>
                 <motion.article
@@ -90,7 +95,7 @@ const HeroSection = () => {
                     </article>
                 </motion.article>
             </section>
-        </main>
+        </main >
     )
 }
 

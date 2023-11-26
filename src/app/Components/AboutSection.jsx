@@ -101,7 +101,7 @@ const AboutSection = () => {
                         <TypeAnimation
                             splitter={(str) => str.split(/(?= )/)} // 'Lorem ipsum dolor' -> ['Lorem', ' ipsum', ' dolor']
                             sequence={[
-                                'As a highly motivated and enthusiastic full stack web development with a passion or creating interactive and responsive web applications. I have experience working with JavaScrip(ES6), React.js, Next.js, Node.js, Express, MangoDB, HTML5, CSS3, and GitHub. I am a quick learner and I am a team player and excited to work with others to create amazing applications.',
+                                'As a highly motivated and enthusiastic full stack web development with a passion or creating interactive and responsive web applications. I have experience working with JavaScrip, React.js, Next.js, Node.js, Express, MangoDB, HTML5, CSS3, and GitHub. I am a quick learner and I am a team player and excited to work with others to create amazing applications.',
                                 3000,
                             ]}
                             speed={{ type: 'keyStrokeDelayInMs', value: 30 }}

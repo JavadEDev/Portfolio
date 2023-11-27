@@ -35,7 +35,7 @@ const Navbar = () => {
                         alt='Logo Icon'
                     />
                 </Link>
-                <article className="mobile-menu md:hidden flex ">
+                <article className="mobile-menu md:hidden flex justify-around">
                     <ThemeButton />
                     {
                         !navbarOpen ? (

@@ -1,5 +1,9 @@
 'use client'
 import { useState, useEffect } from 'react';
+import IconParkOutlineToTop from '../../../public/IconParkOutlineToTop.svg'
+import Image from 'next/image'
+import Link from 'next/link'
+
 
 const BackToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -32,11 +36,16 @@ const BackToTopButton = () => {
     return (
         <>
             {isVisible && (
-                <button
-                    className='px-1 py-2 right-2 bottom-2 w-full sm:w-fit rounded-md fixed z-100 text-content cursor-pointer flex items-center content-center bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  hover:bg-border-2 border'
-                    onClick={scrollToTop}>
-                    Top
-                </button>
+                <Link href="/"
+                    onClick={scrollToTop}
+                    className='p-1 right-2 bottom-2 w-full sm:w-fit rounded-md fixed z-100 cursor-pointer flex items-center content-center bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  border border-content hover:border-primary-700'
+                >
+                    <Image
+                        src={IconParkOutlineToTop}
+                        alt='IconParkOutlineToTop Icon'
+                    />
+                </Link>
+
             )}
         </>
     );

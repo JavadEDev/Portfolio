@@ -5,6 +5,7 @@ import ProjectsSection from './Components/ProjectsSection'
 import EmailSection from './Components/EmailSection'
 import Footer from './Components/Footer'
 import AchievementsSection from './Components/AchievementsSection'
+import BackToTopButton from './Components/BackToTopButton'
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
           <AboutSection />
           <ProjectsSection />
           <EmailSection />
+          <BackToTopButton />
         </section>
         <Footer />
       </main>

@@ -13,17 +13,25 @@ const TAB_DATA = [
             <ul
                 className='list-disc pl-2'
             >
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript(ES6)</li>
-                <li>React.js</li>
                 <li>Next.js</li>
+                <li>React.js</li>
+                <li>TypeScript</li>
+                <li>JavaScript(ES6+)</li>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>Sass/SCSS</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Material-UI</li>
+                <li>Fetch API</li>
+                <li>RESTful APIs</li>
+                <li>GraphQL</li>
+                <li>Responsive Design</li>
+                <li>Performance Optimization</li>
+                <li>Cross-Browser Compatibility</li>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MangoDB</li>
-                <li>TailwindCSS</li>
-                <li>MaterialUI</li>
-                <li>BootStrap5</li>
                 <li>GitHub</li>
             </ul>
         )
@@ -35,8 +43,11 @@ const TAB_DATA = [
             <ul
                 className='list-disc pl-2'
             >
-                <li>Front End Development Advanced</li>
-                <li>Bachelor of Software Engineering</li>
+                <li>Norwegian Course (B1), Lingu</li>
+                <li>Frontend Development Industry Training, Brainnest Co</li>
+                <li>Norwegian Course (A1-A2), Norwegian School of Economics</li>
+                <li>BSe in Computer Software Technology Engineering</li>
+                <li>AD in Software Engineering</li>
             </ul>
         )
     },
@@ -60,7 +71,8 @@ const TAB_DATA = [
             <ul
                 className='list-disc pl-2'
             >
-                <li>Frontend Freelancer</li>
+                <li>Freelancer and Self-taught Developer</li>
+                <li>Executive Secretary, ICT Guild Organization</li>
                 <li>IT Support/Desktop Support Engineer at 7 Years</li>
             </ul>
         )

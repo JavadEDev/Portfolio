@@ -73,7 +73,7 @@ const TAB_DATA = [
             >
                 <li>Freelancer and Self-taught Developer</li>
                 <li>Executive Secretary, ICT Guild Organization</li>
-                <li>IT Support/Desktop Support Engineer at 7 Years</li>
+                <li>IT Support/Desktop Support Engineer for 7 Years</li>
             </ul>
         )
     }

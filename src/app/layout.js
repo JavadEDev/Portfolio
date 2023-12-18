@@ -1,10 +1,14 @@
 import './globals.css'
 import Head from 'next/head';
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import Providers from './providers'
 import { NextSeo } from 'next-seo';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: `Javad Esmati Portfolio Exploration`,
@@ -14,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Head>
           <NextSeo
             title="Javad Esmati Portfolio Exploration"

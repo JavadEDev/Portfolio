@@ -38,7 +38,7 @@ const BackToTopButton = () => {
             {isVisible && (
                 <Link href="/"
                     onClick={scrollToTop}
-                    className='p-1 right-2 bottom-2 w-fit rounded-md fixed z-100 cursor-pointer flex items-center content-center bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  border border-content hover:border-primary-700'
+                    className='sm:p-1 right-2 bottom-2 w-fit rounded-md fixed z-100 cursor-pointer flex items-center content-center bg-gradient-to-br from-other-500 via-primary-500 to-secondary-500  border border-content hover:border-primary-700'
                 >
                     <Image
                         src={IconParkOutlineToTop}

@@ -9,7 +9,7 @@ const roboto = Roboto({
   display: 'swap',
 })
 export const metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
+  metadataBase: new URL('https://www.javadesmati.name'),
   title: {
     template: `%s | ${siteMetadata.title}`,
     default: siteMetadata.title,

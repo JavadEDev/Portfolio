@@ -1,7 +1,7 @@
 import './globals.css'
 import { Roboto } from 'next/font/google'
 import Providers from './providers'
-import siteMetadata from './siteMetadata'
+import siteMetadata from './utils/siteMetadata'
 
 const roboto = Roboto({
   weight: '400',

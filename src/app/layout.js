@@ -1,6 +1,7 @@
 import './globals.css'
 import { Roboto } from 'next/font/google'
 import Providers from './providers'
+import siteMetadata from './siteMetadata'
 
 const roboto = Roboto({
   weight: '400',
@@ -8,19 +9,47 @@ const roboto = Roboto({
   display: 'swap',
 })
 export const metadata = {
-  title: `Javad Esmati Portfolio Exploration`,
-  description: 'This is Javad Esmati portfolio website',
-  generator: 'Javad Esmati',
-  applicationName: 'Portfolio',
+  metadataBase: new URL(siteMetadata.siteUrl),
+  title: {
+    template: `%s | ${siteMetadata.title}`,
+    default: siteMetadata.title,
+  },
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [
+      siteMetadata.socialBanner
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    images: [siteMetadata.socialBanner],
+  },
   referrer: 'origin-when-cross-origin',
-  keywords: ['Javad Esmati', 'Developer', 'Frontend','Next.js', 'React', 'JavaScript'],
-  authors: [{ name: 'Javad' }, { name: 'Javad Esmati', url: 'https://javadesmati.name' }],
-  creator: 'Javad Esmati',
-  publisher: 'Javad',
+  keywords: ['Javad Esmati', 'Developer', 'Frontend', 'Next.js', 'React', 'JavaScript'],
   formatDetection: {
     email: 'Javad.esmatib@Gmail.com',
     address: 'Norway',
-    telephone: false,
+    telephone: +47 - 46213064,
   },
   verification: {
     google: 'google',
@@ -37,11 +66,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={roboto.className}>
-        <title>Javad&rsquo;s Portfolio</title>
-        <meta name="description" content="This is Javad Esmati portfolio website" />
-        <meta name="keywords" content="Javad, Esmati, Frontend, backend, Developer, Programer, JavaSCript, HTML5, CSS3, Nextjs, Reactjs, MangoDB" />
-        <link rel="canonical" href="https://Javadesmati.name" />
-        <meta name="robots" content="index, follow" />
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -16,6 +16,26 @@ const ProjectsData = [
   },
     {
     id: 2,
+    title: "ApexMarket E-Commerce Website",
+    description: 'a cutting-edge Full Stack E-Commerce App that I have developed using Next.js, Stripe, TypeScript, Tailwind CSS, and Payload CMS.',
+    image: "/images/projects/ApexMarket.jpg",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/Javad-EB/ecommerce/tree/main",
+    previewUrl: "https://raw.githubusercontent.com/Javad-EB/ecommerce/main/public/main%20page.jpg",
+  },
+  ,
+    {
+    id: 3,
+    title: "Anime Website (Server-Side App)",
+    description: 'With a tech stack of Next.js 14, TypeScript, TailwindCSS, and Framer Motion animations, I have built an immersive server-side application showcasing the power of modern web development.',
+    image: "/images/projects/Anime.png",
+    tag: ["All", "Web","Mobile"],
+    gitUrl: "https://github.com/Javad-EB/Next14-serverside-API",
+    previewUrl: "https://next14-serverside-api.vercel.app/",
+  },
+  ,
+    {
+    id: 4,
     title: "Yar Movie Site",
     description: 'This site Create by Reactjs. (Typescript and SCSS with imdb API)',
     image: "/images/projects/YarMovie.png",
@@ -24,7 +44,7 @@ const ProjectsData = [
     previewUrl: "https://github.com/Javad-EB/YarMovie",
   },
   {
-    id: 3,
+    id: 5,
     title: "JavaScript Book Library",
     description: 'Build a Book Library Page to Add, Delete, Update and Edit books.',
     image: "/images/projects/booklibrary.png",
@@ -33,7 +53,7 @@ const ProjectsData = [
     previewUrl: "https://javad-eb.github.io/Book-Library/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Full Stack Todo-List",
     description: 'Build a ToDo List application and deploy it to Heroku! (Install express.js, nodemon, mangoose, bcrypt bcryptjs, validator, cookie-parser jsonwebtoken Packages)',
     image: "/images/projects/todolist.png",
@@ -42,7 +62,7 @@ const ProjectsData = [
     previewUrl: "https://todo-list-react.herokuapp.com/",
   },
   {
-    id: 5,
+    id: 7,
     title: "JavaScript Game",
     description: 'Rock paper scissors is a hand game, play between you and computer.',
     image: "/images/projects/Game.png",
@@ -51,7 +71,7 @@ const ProjectsData = [
     previewUrl: "https://javad-eb.github.io/JavaScript-Main-Project/",
   },
   {
-    id: 6,
+    id: 8,
     title: "JavaScript Calculator",
     description: 'This calculator is written in JavaScript,CSS and HTML. This program can calculate simple math operations.',
     image: "/images/projects/Calculator.png",
@@ -60,7 +80,7 @@ const ProjectsData = [
     previewUrl: "https://javad-eb.github.io/JavadScript-Calculator/",
   },
   {
-    id: 7,
+    id: 9,
     title: "Travel website",
     description: 'This site created by Reactjs.',
     image: "/images/projects/Travelwensite.png",

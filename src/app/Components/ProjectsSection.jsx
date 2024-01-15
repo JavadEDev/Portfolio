@@ -8,7 +8,7 @@ const ProjectsData = [
   {
     id: 1,
     title: "JavaScript Portfolio Website",
-    description: 'Build a standard portfolio website and deploy on GitHub.',
+    description: 'I have used Next.js and Tailwind CSS to bring my idea to life using a combination of creativity and innovation. What was the outcome? a modern, responsive layout that accurately captures my enthusiasm for web development.',
     image: "/images/projects/portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Javad-EB/Portfolio-Page",

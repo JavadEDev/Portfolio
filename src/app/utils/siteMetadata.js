@@ -6,7 +6,6 @@ const siteMetadata =
     headerTitle: 'Portfolio website',
     description: 'A portfolio website created with Next.js, Tailwind CSS and contentlayer',
     language: 'en-us',
-    theme: 'system',
     siteUrl: 'https://www.javadesmati.name',
     siteLogo: '/logo.svg',
     socialBanner: '/images/social-banner.png',

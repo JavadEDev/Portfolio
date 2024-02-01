@@ -18,8 +18,8 @@ const HeroSection = () => {
     const fileUrl = "../../../public/images/cv.pdf"
     const filename = "cv.pdf";
     return (
-        <main className='lg:py-4 scroll-snap-x-center scroll-snap-y-center'>
-            <section className="grid grid-cols-1 sm:grid-cols-12">
+        <main className='lg:py-4 snap-center flex flex-col items-center justify-between'>
+            <section className="grid grid-cols-1 sm:grid-cols-12 snap-center">
                 <motion.article
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}

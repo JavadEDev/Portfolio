@@ -10,17 +10,17 @@ import BackToTopButton from './Components/BackToTopButton'
 export default function Home() {
 
   return (
-      <main className="flex flex-col min-h-screen bg-bkg scroll-snap-type-y-mandatory scroll-behavior-smooth overflow-auto">
-        <Navbar />
-        <section className="container mt-24 mx-auto px-12 py-4">
-          <HeroSection />
-          <AchievementsSection />
-          <AboutSection />
-          <ProjectsSection />
-          <EmailSection />
-          <BackToTopButton />
-        </section>
-        <Footer />
-      </main>
+    <main className="min-h-screen bg-bkg snap-y snap-mandatory overflow-auto scroll-smooth">
+      <Navbar />
+      <section className="container mt-24 mx-auto px-12 py-4 snap-y">
+        <HeroSection />
+        <AchievementsSection />
+        <AboutSection />
+        <ProjectsSection />
+        <EmailSection />
+        <BackToTopButton />
+      </section>
+      <Footer />
+    </main>
   )
 }

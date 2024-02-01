@@ -7,15 +7,6 @@ import { motion, useInView } from "framer-motion"
 const ProjectsData = [
   {
     id: 1,
-    title: "JavaScript Portfolio Website",
-    description: 'Build a standard portfolio website and deploy on GitHub.',
-    image: "/images/projects/portfolio.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Javad-EB/Portfolio-Page",
-    previewUrl: "https://javad-eb.github.io/Portfolio-Page/#",
-  },
-    {
-    id: 2,
     title: "ApexMarket E-Commerce Website",
     description: 'a cutting-edge Full Stack E-Commerce App that I have developed using Next.js, Stripe, TypeScript, Tailwind CSS, and Payload CMS.',
     image: "/images/projects/apexmarket.jpg",
@@ -23,18 +14,27 @@ const ProjectsData = [
     gitUrl: "https://github.com/Javad-EB/ecommerce/tree/main",
     previewUrl: "https://raw.githubusercontent.com/Javad-EB/ecommerce/main/public/main%20page.jpg",
   },
+  {
+    id: 2,
+    title: "JavaScript Portfolio Website",
+    description: 'Build a standard portfolio website and deploy on GitHub.',
+    image: "/images/projects/portfolio.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Javad-EB/Portfolio-Page",
+    previewUrl: "https://javad-eb.github.io/Portfolio-Page/#",
+  },
   ,
-    {
+  {
     id: 3,
     title: "Anime Website (Server-Side App)",
     description: 'With a tech stack of Next.js 14, TypeScript, TailwindCSS, and Framer Motion animations, I have built an immersive server-side application showcasing the power of modern web development.',
     image: "/images/projects/anime.png",
-    tag: ["All", "Web","Mobile"],
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/Javad-EB/Next14-serverside-API",
     previewUrl: "https://next14-serverside-api.vercel.app/",
   },
   ,
-    {
+  {
     id: 4,
     title: "Yar Movie Site",
     description: 'This site Create by Reactjs. (Typescript and SCSS with imdb API)',
@@ -84,7 +84,7 @@ const ProjectsData = [
     title: "Travel website",
     description: 'This site created by Reactjs.',
     image: "/images/projects/Travelwensite.png",
-    tag: ["All", "Web" , "Mobile"],
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/Javad-EB/TravelWebsite",
     previewUrl: "https://delicate-haupia-d07800.netlify.app/",
   },
@@ -110,7 +110,7 @@ const ProjectsSection = () => {
   }
 
   return (
-    <section id="projects" className='scroll-snap-x-center scroll-snap-y-center'>
+    <section id="projects" className='snap-center'>
       <h2 className='text-center text-4xl font-bold text-white mt-5 mb-4 '>
         My Projects
       </h2>

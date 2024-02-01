@@ -41,7 +41,7 @@ const EmailSection = () => {
 
 
     return (
-        <section id='contact' className='grid md:grid-cols-2 px-8 my-12 md:my-12 py-24 gap-4 relative'>
+        <section id='contact' className='grid md:grid-cols-2 px-8 my-12 md:my-12 py-24 gap-4 relative snap-center'>
             <article className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-500 to-transparent h-full w-full z-0 absolute '>
                 <Map />
             </article>

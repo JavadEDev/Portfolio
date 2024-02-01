@@ -89,8 +89,8 @@ const AboutSection = () => {
     }
 
     return (
-        <section id="about" className='text-content pt-5 scroll-snap-x-center scroll-snap-y-center'>
-            <article className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16'>
+        <section id="about" className='text-content pt-5 snap-center'>
+            <article className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 sm:px-16 snap-center'>
                 <motion.div
                     animate={{
                         scale: [1, 0.5, 0.5, 1, 1],
